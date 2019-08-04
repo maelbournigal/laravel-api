@@ -1,0 +1,12 @@
+name: laravel-api
+recipe: laravel
+config:
+  webroot: ./public
+  database: mysql:5.7
+services:
+  my-services:
+    type: phpmyadmin:4.7
+    hosts:
+      - mysql57
+    mysql57:
+      type: mysql:5.7
